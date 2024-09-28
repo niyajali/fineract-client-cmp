@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>GetLoanProductsTemplateResponse</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            fineract-client
+                    </a>
+            </div>
+            <div class="library-version">
+1.0.4            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":fineract-client:dokkaHtml/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="fineract-client::org.mifos.fineract.client.models/GetLoanProductsTemplateResponse///PointingToDeclaration//-843168002">
+  <div class="breadcrumbs"><a href="../../../index.html">fineract-client</a><span class="delimiter">/</span><a href="../index.html">org.mifos.fineract.client.models</a><span class="delimiter">/</span><span class="current">GetLoanProductsTemplateResponse</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Get</span><wbr></wbr><span>Loan</span><wbr></wbr><span>Products</span><wbr></wbr><span>Template</span><wbr></wbr><span><span>Response</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">GetLoanProductsTemplateResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>accountingMappingOptions<span class="token operator">: </span><a href="../-get-loan-products-accounting-mapping-options/index.html">GetLoanProductsAccountingMappingOptions</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>accountingRule<span class="token operator">: </span><a href="../-get-loan-products-accounting-rule/index.html">GetLoanProductsAccountingRule</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>accountingRuleOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-accounting-rule/index.html">GetLoanProductsAccountingRule</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>advancedPaymentAllocationFutureInstallmentAllocationRules<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>advancedPaymentAllocationTransactionTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>advancedPaymentAllocationTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>amortizationType<span class="token operator">: </span><a href="../-get-loan-products-amortization-type/index.html">GetLoanProductsAmortizationType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>amortizationTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-amortization-type/index.html">GetLoanProductsAmortizationType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>chargeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-charge-options/index.html">GetLoanProductsChargeOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>currency<span class="token operator">: </span><a href="../-get-loan-products-template-currency/index.html">GetLoanProductsTemplateCurrency</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>currencyOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-currency-options/index.html">GetLoanProductsCurrencyOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>daysInMonthType<span class="token operator">: </span><a href="../-get-loans-products-days-in-month-template-type/index.html">GetLoansProductsDaysInMonthTemplateType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>daysInMonthTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loans-products-days-in-month-template-type/index.html">GetLoansProductsDaysInMonthTemplateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>daysInYearType<span class="token operator">: </span><a href="../-get-loan-products-days-in-year-template-type/index.html">GetLoanProductsDaysInYearTemplateType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>daysInYearTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-template-type/index.html">GetLoanProductsInterestTemplateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>includeInBorrowerCycle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>interestCalculationPeriodType<span class="token operator">: </span><a href="../-get-loans-products-interest-calculation-period-type/index.html">GetLoansProductsInterestCalculationPeriodType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>interestCalculationPeriodTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loans-products-interest-calculation-period-type/index.html">GetLoansProductsInterestCalculationPeriodType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>interestRateFrequencyType<span class="token operator">: </span><a href="../-get-loan-products-interest-rate-template-frequency-type/index.html">GetLoanProductsInterestRateTemplateFrequencyType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>interestRateFrequencyTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-rate-template-frequency-type/index.html">GetLoanProductsInterestRateTemplateFrequencyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>interestRateVariationsForBorrowerCycle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>interestRecalculationCompoundingTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-recalculation-compounding-type/index.html">GetLoanProductsInterestRecalculationCompoundingType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>interestRecalculationData<span class="token operator">: </span><a href="../-get-loan-products-interest-recalculation-template-data/index.html">GetLoanProductsInterestRecalculationTemplateData</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>interestRecalculationFrequencyTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-recalculation-compounding-frequency-type/index.html">GetLoanProductsInterestRecalculationCompoundingFrequencyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>interestType<span class="token operator">: </span><a href="../-get-loan-products-interest-template-type/index.html">GetLoanProductsInterestTemplateType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>interestTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-template-type/index.html">GetLoanProductsInterestTemplateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isInterestRecalculationEnabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>loanScheduleProcessingTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>loanScheduleTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>numberOfRepaymentVariationsForBorrowerCycle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>paymentTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-payment-type-options/index.html">GetLoanProductsPaymentTypeOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>preClosureInterestCalculationStrategyOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-pre-closure-interest-calculation-strategy/index.html">GetLoanProductsPreClosureInterestCalculationStrategy</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>principalVariationsForBorrowerCycle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>repaymentFrequencyType<span class="token operator">: </span><a href="../-get-loan-products-repayment-template-frequency-type/index.html">GetLoanProductsRepaymentTemplateFrequencyType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>repaymentFrequencyTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-repayment-template-frequency-type/index.html">GetLoanProductsRepaymentTemplateFrequencyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>repaymentStartDateTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-repayment-start-date-type/index.html">GetLoanProductsRepaymentStartDateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>rescheduleStrategyTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-reschedule-strategy-type/index.html">GetLoanProductsRescheduleStrategyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transactionProcessingStrategyOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-transaction-processing-strategy-options/index.html">GetLoanProductsTransactionProcessingStrategyOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>useBorrowerCycle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>valueConditionTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-value-condition-type-options/index.html">GetLoanProductsValueConditionTypeOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><p class="paragraph">GetLoanProductsTemplateResponse</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>accounting</span><wbr></wbr><span>Mapping</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>accounting</span><wbr></wbr><span><span>Rule</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>accounting</span><wbr></wbr><span>Rule</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>advanced</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span>Future</span><wbr></wbr><span>Installment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span><span>Rules</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>advanced</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span>Transaction</span><wbr></wbr><span><span>Types</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>advanced</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span><span>Types</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>amortization</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>amortization</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>charge</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>currency</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>currency</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>days</span><wbr></wbr><span>In</span><wbr></wbr><span>Month</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>days</span><wbr></wbr><span>In</span><wbr></wbr><span>Month</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>days</span><wbr></wbr><span>In</span><wbr></wbr><span>Year</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>days</span><wbr></wbr><span>In</span><wbr></wbr><span>Year</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>include</span><wbr></wbr><span>In</span><wbr></wbr><span>Borrower</span><wbr></wbr><span><span>Cycle</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interest</span><wbr></wbr><span>Calculation</span><wbr></wbr><span>Period</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interest</span><wbr></wbr><span>Calculation</span><wbr></wbr><span>Period</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interest</span><wbr></wbr><span>Rate</span><wbr></wbr><span>Frequency</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interest</span><wbr></wbr><span>Rate</span><wbr></wbr><span>Frequency</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interest</span><wbr></wbr><span>Rate</span><wbr></wbr><span>Variations</span><wbr></wbr><span>For</span><wbr></wbr><span>Borrower</span><wbr></wbr><span><span>Cycle</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interest</span><wbr></wbr><span>Recalculation</span><wbr></wbr><span>Compounding</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interest</span><wbr></wbr><span>Recalculation</span><wbr></wbr><span><span>Data</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interest</span><wbr></wbr><span>Recalculation</span><wbr></wbr><span>Frequency</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interest</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>interest</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>is</span><wbr></wbr><span>Interest</span><wbr></wbr><span>Recalculation</span><wbr></wbr><span><span>Enabled</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>loan</span><wbr></wbr><span>Schedule</span><wbr></wbr><span>Processing</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>loan</span><wbr></wbr><span>Schedule</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>number</span><wbr></wbr><span>Of</span><wbr></wbr><span>Repayment</span><wbr></wbr><span>Variations</span><wbr></wbr><span>For</span><wbr></wbr><span>Borrower</span><wbr></wbr><span><span>Cycle</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>payment</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>pre</span><wbr></wbr><span>Closure</span><wbr></wbr><span>Interest</span><wbr></wbr><span>Calculation</span><wbr></wbr><span>Strategy</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>principal</span><wbr></wbr><span>Variations</span><wbr></wbr><span>For</span><wbr></wbr><span>Borrower</span><wbr></wbr><span><span>Cycle</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>repayment</span><wbr></wbr><span>Frequency</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>repayment</span><wbr></wbr><span>Frequency</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>repayment</span><wbr></wbr><span>Start</span><wbr></wbr><span>Date</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>reschedule</span><wbr></wbr><span>Strategy</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>transaction</span><wbr></wbr><span>Processing</span><wbr></wbr><span>Strategy</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>use</span><wbr></wbr><span>Borrower</span><wbr></wbr><span><span>Cycle</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>value</span><wbr></wbr><span>Condition</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></u></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-189475906%2FConstructors%2F-843168002" anchor-label="GetLoanProductsTemplateResponse" id="-189475906%2FConstructors%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-loan-products-template-response.html"><span>Get</span><wbr></wbr><span>Loan</span><wbr></wbr><span>Products</span><wbr></wbr><span>Template</span><wbr></wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-189475906%2FConstructors%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">accountingMappingOptions<span class="token operator">: </span><a href="../-get-loan-products-accounting-mapping-options/index.html">GetLoanProductsAccountingMappingOptions</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">accountingRule<span class="token operator">: </span><a href="../-get-loan-products-accounting-rule/index.html">GetLoanProductsAccountingRule</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">accountingRuleOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-accounting-rule/index.html">GetLoanProductsAccountingRule</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">advancedPaymentAllocationFutureInstallmentAllocationRules<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">advancedPaymentAllocationTransactionTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">advancedPaymentAllocationTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">amortizationType<span class="token operator">: </span><a href="../-get-loan-products-amortization-type/index.html">GetLoanProductsAmortizationType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">amortizationTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-amortization-type/index.html">GetLoanProductsAmortizationType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">chargeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-charge-options/index.html">GetLoanProductsChargeOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">currency<span class="token operator">: </span><a href="../-get-loan-products-template-currency/index.html">GetLoanProductsTemplateCurrency</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">currencyOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-currency-options/index.html">GetLoanProductsCurrencyOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">daysInMonthType<span class="token operator">: </span><a href="../-get-loans-products-days-in-month-template-type/index.html">GetLoansProductsDaysInMonthTemplateType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">daysInMonthTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loans-products-days-in-month-template-type/index.html">GetLoansProductsDaysInMonthTemplateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">daysInYearType<span class="token operator">: </span><a href="../-get-loan-products-days-in-year-template-type/index.html">GetLoanProductsDaysInYearTemplateType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">daysInYearTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-template-type/index.html">GetLoanProductsInterestTemplateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">includeInBorrowerCycle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">interestCalculationPeriodType<span class="token operator">: </span><a href="../-get-loans-products-interest-calculation-period-type/index.html">GetLoansProductsInterestCalculationPeriodType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">interestCalculationPeriodTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loans-products-interest-calculation-period-type/index.html">GetLoansProductsInterestCalculationPeriodType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">interestRateFrequencyType<span class="token operator">: </span><a href="../-get-loan-products-interest-rate-template-frequency-type/index.html">GetLoanProductsInterestRateTemplateFrequencyType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">interestRateFrequencyTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-rate-template-frequency-type/index.html">GetLoanProductsInterestRateTemplateFrequencyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">interestRateVariationsForBorrowerCycle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">interestRecalculationCompoundingTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-recalculation-compounding-type/index.html">GetLoanProductsInterestRecalculationCompoundingType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">interestRecalculationData<span class="token operator">: </span><a href="../-get-loan-products-interest-recalculation-template-data/index.html">GetLoanProductsInterestRecalculationTemplateData</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">interestRecalculationFrequencyTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-recalculation-compounding-frequency-type/index.html">GetLoanProductsInterestRecalculationCompoundingFrequencyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">interestType<span class="token operator">: </span><a href="../-get-loan-products-interest-template-type/index.html">GetLoanProductsInterestTemplateType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">interestTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-template-type/index.html">GetLoanProductsInterestTemplateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">isInterestRecalculationEnabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">loanScheduleProcessingTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">loanScheduleTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">numberOfRepaymentVariationsForBorrowerCycle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">paymentTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-payment-type-options/index.html">GetLoanProductsPaymentTypeOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">preClosureInterestCalculationStrategyOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-pre-closure-interest-calculation-strategy/index.html">GetLoanProductsPreClosureInterestCalculationStrategy</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">principalVariationsForBorrowerCycle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">repaymentFrequencyType<span class="token operator">: </span><a href="../-get-loan-products-repayment-template-frequency-type/index.html">GetLoanProductsRepaymentTemplateFrequencyType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">repaymentFrequencyTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-repayment-template-frequency-type/index.html">GetLoanProductsRepaymentTemplateFrequencyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">repaymentStartDateTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-repayment-start-date-type/index.html">GetLoanProductsRepaymentStartDateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">rescheduleStrategyTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-reschedule-strategy-type/index.html">GetLoanProductsRescheduleStrategyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">transactionProcessingStrategyOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-transaction-processing-strategy-options/index.html">GetLoanProductsTransactionProcessingStrategyOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">useBorrowerCycle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">valueConditionTypeOptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-value-condition-type-options/index.html">GetLoanProductsValueConditionTypeOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1798697406%2FProperties%2F-843168002" anchor-label="accountingMappingOptions" id="-1798697406%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="accounting-mapping-options.html"><span>accounting</span><wbr></wbr><span>Mapping</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1798697406%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="accounting-mapping-options.html">accountingMappingOptions</a><span class="token operator">: </span><a href="../-get-loan-products-accounting-mapping-options/index.html">GetLoanProductsAccountingMappingOptions</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1550009098%2FProperties%2F-843168002" anchor-label="accountingRule" id="-1550009098%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="accounting-rule.html"><span>accounting</span><wbr></wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1550009098%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="accounting-rule.html">accountingRule</a><span class="token operator">: </span><a href="../-get-loan-products-accounting-rule/index.html">GetLoanProductsAccountingRule</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-204672090%2FProperties%2F-843168002" anchor-label="accountingRuleOptions" id="-204672090%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="accounting-rule-options.html"><span>accounting</span><wbr></wbr><span>Rule</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-204672090%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="accounting-rule-options.html">accountingRuleOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-accounting-rule/index.html">GetLoanProductsAccountingRule</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1391036622%2FProperties%2F-843168002" anchor-label="advancedPaymentAllocationFutureInstallmentAllocationRules" id="1391036622%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="advanced-payment-allocation-future-installment-allocation-rules.html"><span>advanced</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span>Future</span><wbr></wbr><span>Installment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span><span>Rules</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1391036622%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="advanced-payment-allocation-future-installment-allocation-rules.html">advancedPaymentAllocationFutureInstallmentAllocationRules</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="333023028%2FProperties%2F-843168002" anchor-label="advancedPaymentAllocationTransactionTypes" id="333023028%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="advanced-payment-allocation-transaction-types.html"><span>advanced</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span>Transaction</span><wbr></wbr><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="333023028%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="advanced-payment-allocation-transaction-types.html">advancedPaymentAllocationTransactionTypes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="645204306%2FProperties%2F-843168002" anchor-label="advancedPaymentAllocationTypes" id="645204306%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="advanced-payment-allocation-types.html"><span>advanced</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="645204306%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="advanced-payment-allocation-types.html">advancedPaymentAllocationTypes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2126658226%2FProperties%2F-843168002" anchor-label="amortizationType" id="-2126658226%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="amortization-type.html"><span>amortization</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2126658226%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="amortization-type.html">amortizationType</a><span class="token operator">: </span><a href="../-get-loan-products-amortization-type/index.html">GetLoanProductsAmortizationType</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1843025998%2FProperties%2F-843168002" anchor-label="amortizationTypeOptions" id="1843025998%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="amortization-type-options.html"><span>amortization</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1843025998%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="amortization-type-options.html">amortizationTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-amortization-type/index.html">GetLoanProductsAmortizationType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2081610455%2FProperties%2F-843168002" anchor-label="chargeOptions" id="-2081610455%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="charge-options.html"><span>charge</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2081610455%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="charge-options.html">chargeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-charge-options/index.html">GetLoanProductsChargeOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="536920982%2FProperties%2F-843168002" anchor-label="currency" id="536920982%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="currency.html"><span><span>currency</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="536920982%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="currency.html">currency</a><span class="token operator">: </span><a href="../-get-loan-products-template-currency/index.html">GetLoanProductsTemplateCurrency</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1296942842%2FProperties%2F-843168002" anchor-label="currencyOptions" id="-1296942842%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="currency-options.html"><span>currency</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1296942842%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="currency-options.html">currencyOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-currency-options/index.html">GetLoanProductsCurrencyOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1465092629%2FProperties%2F-843168002" anchor-label="daysInMonthType" id="1465092629%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="days-in-month-type.html"><span>days</span><wbr></wbr><span>In</span><wbr></wbr><span>Month</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1465092629%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="days-in-month-type.html">daysInMonthType</a><span class="token operator">: </span><a href="../-get-loans-products-days-in-month-template-type/index.html">GetLoansProductsDaysInMonthTemplateType</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1400244825%2FProperties%2F-843168002" anchor-label="daysInMonthTypeOptions" id="-1400244825%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="days-in-month-type-options.html"><span>days</span><wbr></wbr><span>In</span><wbr></wbr><span>Month</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1400244825%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="days-in-month-type-options.html">daysInMonthTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loans-products-days-in-month-template-type/index.html">GetLoansProductsDaysInMonthTemplateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1671295660%2FProperties%2F-843168002" anchor-label="daysInYearType" id="-1671295660%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="days-in-year-type.html"><span>days</span><wbr></wbr><span>In</span><wbr></wbr><span>Year</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1671295660%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="days-in-year-type.html">daysInYearType</a><span class="token operator">: </span><a href="../-get-loan-products-days-in-year-template-type/index.html">GetLoanProductsDaysInYearTemplateType</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="102505864%2FProperties%2F-843168002" anchor-label="daysInYearTypeOptions" id="102505864%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="days-in-year-type-options.html"><span>days</span><wbr></wbr><span>In</span><wbr></wbr><span>Year</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="102505864%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="days-in-year-type-options.html">daysInYearTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-template-type/index.html">GetLoanProductsInterestTemplateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1859714256%2FProperties%2F-843168002" anchor-label="includeInBorrowerCycle" id="-1859714256%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="include-in-borrower-cycle.html"><span>include</span><wbr></wbr><span>In</span><wbr></wbr><span>Borrower</span><wbr></wbr><span><span>Cycle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1859714256%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="include-in-borrower-cycle.html">includeInBorrowerCycle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1469979335%2FProperties%2F-843168002" anchor-label="interestCalculationPeriodType" id="-1469979335%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interest-calculation-period-type.html"><span>interest</span><wbr></wbr><span>Calculation</span><wbr></wbr><span>Period</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1469979335%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="interest-calculation-period-type.html">interestCalculationPeriodType</a><span class="token operator">: </span><a href="../-get-loans-products-interest-calculation-period-type/index.html">GetLoansProductsInterestCalculationPeriodType</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1448708611%2FProperties%2F-843168002" anchor-label="interestCalculationPeriodTypeOptions" id="1448708611%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interest-calculation-period-type-options.html"><span>interest</span><wbr></wbr><span>Calculation</span><wbr></wbr><span>Period</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1448708611%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="interest-calculation-period-type-options.html">interestCalculationPeriodTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loans-products-interest-calculation-period-type/index.html">GetLoansProductsInterestCalculationPeriodType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2106795015%2FProperties%2F-843168002" anchor-label="interestRateFrequencyType" id="2106795015%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interest-rate-frequency-type.html"><span>interest</span><wbr></wbr><span>Rate</span><wbr></wbr><span>Frequency</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2106795015%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="interest-rate-frequency-type.html">interestRateFrequencyType</a><span class="token operator">: </span><a href="../-get-loan-products-interest-rate-template-frequency-type/index.html">GetLoanProductsInterestRateTemplateFrequencyType</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1743214731%2FProperties%2F-843168002" anchor-label="interestRateFrequencyTypeOptions" id="-1743214731%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interest-rate-frequency-type-options.html"><span>interest</span><wbr></wbr><span>Rate</span><wbr></wbr><span>Frequency</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1743214731%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="interest-rate-frequency-type-options.html">interestRateFrequencyTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-rate-template-frequency-type/index.html">GetLoanProductsInterestRateTemplateFrequencyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1625935198%2FProperties%2F-843168002" anchor-label="interestRateVariationsForBorrowerCycle" id="-1625935198%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interest-rate-variations-for-borrower-cycle.html"><span>interest</span><wbr></wbr><span>Rate</span><wbr></wbr><span>Variations</span><wbr></wbr><span>For</span><wbr></wbr><span>Borrower</span><wbr></wbr><span><span>Cycle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1625935198%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="interest-rate-variations-for-borrower-cycle.html">interestRateVariationsForBorrowerCycle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1093525722%2FProperties%2F-843168002" anchor-label="interestRecalculationCompoundingTypeOptions" id="1093525722%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interest-recalculation-compounding-type-options.html"><span>interest</span><wbr></wbr><span>Recalculation</span><wbr></wbr><span>Compounding</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1093525722%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="interest-recalculation-compounding-type-options.html">interestRecalculationCompoundingTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-recalculation-compounding-type/index.html">GetLoanProductsInterestRecalculationCompoundingType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-382334595%2FProperties%2F-843168002" anchor-label="interestRecalculationData" id="-382334595%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interest-recalculation-data.html"><span>interest</span><wbr></wbr><span>Recalculation</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-382334595%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="interest-recalculation-data.html">interestRecalculationData</a><span class="token operator">: </span><a href="../-get-loan-products-interest-recalculation-template-data/index.html">GetLoanProductsInterestRecalculationTemplateData</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2124283937%2FProperties%2F-843168002" anchor-label="interestRecalculationFrequencyTypeOptions" id="-2124283937%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interest-recalculation-frequency-type-options.html"><span>interest</span><wbr></wbr><span>Recalculation</span><wbr></wbr><span>Frequency</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2124283937%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="interest-recalculation-frequency-type-options.html">interestRecalculationFrequencyTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-recalculation-compounding-frequency-type/index.html">GetLoanProductsInterestRecalculationCompoundingFrequencyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1271123837%2FProperties%2F-843168002" anchor-label="interestType" id="-1271123837%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interest-type.html"><span>interest</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1271123837%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="interest-type.html">interestType</a><span class="token operator">: </span><a href="../-get-loan-products-interest-template-type/index.html">GetLoanProductsInterestTemplateType</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="544987001%2FProperties%2F-843168002" anchor-label="interestTypeOptions" id="544987001%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="interest-type-options.html"><span>interest</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="544987001%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="interest-type-options.html">interestTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-interest-template-type/index.html">GetLoanProductsInterestTemplateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1579382872%2FProperties%2F-843168002" anchor-label="isInterestRecalculationEnabled" id="-1579382872%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-interest-recalculation-enabled.html"><span>is</span><wbr></wbr><span>Interest</span><wbr></wbr><span>Recalculation</span><wbr></wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1579382872%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="is-interest-recalculation-enabled.html">isInterestRecalculationEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1699791849%2FProperties%2F-843168002" anchor-label="loanScheduleProcessingTypeOptions" id="1699791849%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="loan-schedule-processing-type-options.html"><span>loan</span><wbr></wbr><span>Schedule</span><wbr></wbr><span>Processing</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1699791849%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="loan-schedule-processing-type-options.html">loanScheduleProcessingTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1742350730%2FProperties%2F-843168002" anchor-label="loanScheduleTypeOptions" id="-1742350730%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="loan-schedule-type-options.html"><span>loan</span><wbr></wbr><span>Schedule</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1742350730%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="loan-schedule-type-options.html">loanScheduleTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-enum-option-data/index.html">EnumOptionData</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1724839301%2FProperties%2F-843168002" anchor-label="numberOfRepaymentVariationsForBorrowerCycle" id="1724839301%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="number-of-repayment-variations-for-borrower-cycle.html"><span>number</span><wbr></wbr><span>Of</span><wbr></wbr><span>Repayment</span><wbr></wbr><span>Variations</span><wbr></wbr><span>For</span><wbr></wbr><span>Borrower</span><wbr></wbr><span><span>Cycle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1724839301%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="number-of-repayment-variations-for-borrower-cycle.html">numberOfRepaymentVariationsForBorrowerCycle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="734300073%2FProperties%2F-843168002" anchor-label="paymentTypeOptions" id="734300073%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="payment-type-options.html"><span>payment</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="734300073%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="payment-type-options.html">paymentTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-payment-type-options/index.html">GetLoanProductsPaymentTypeOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="310658403%2FProperties%2F-843168002" anchor-label="preClosureInterestCalculationStrategyOptions" id="310658403%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pre-closure-interest-calculation-strategy-options.html"><span>pre</span><wbr></wbr><span>Closure</span><wbr></wbr><span>Interest</span><wbr></wbr><span>Calculation</span><wbr></wbr><span>Strategy</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="310658403%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="pre-closure-interest-calculation-strategy-options.html">preClosureInterestCalculationStrategyOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-pre-closure-interest-calculation-strategy/index.html">GetLoanProductsPreClosureInterestCalculationStrategy</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1997523146%2FProperties%2F-843168002" anchor-label="principalVariationsForBorrowerCycle" id="1997523146%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="principal-variations-for-borrower-cycle.html"><span>principal</span><wbr></wbr><span>Variations</span><wbr></wbr><span>For</span><wbr></wbr><span>Borrower</span><wbr></wbr><span><span>Cycle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1997523146%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="principal-variations-for-borrower-cycle.html">principalVariationsForBorrowerCycle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="656291172%2FProperties%2F-843168002" anchor-label="repaymentFrequencyType" id="656291172%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="repayment-frequency-type.html"><span>repayment</span><wbr></wbr><span>Frequency</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="656291172%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="repayment-frequency-type.html">repaymentFrequencyType</a><span class="token operator">: </span><a href="../-get-loan-products-repayment-template-frequency-type/index.html">GetLoanProductsRepaymentTemplateFrequencyType</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-587873416%2FProperties%2F-843168002" anchor-label="repaymentFrequencyTypeOptions" id="-587873416%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="repayment-frequency-type-options.html"><span>repayment</span><wbr></wbr><span>Frequency</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-587873416%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="repayment-frequency-type-options.html">repaymentFrequencyTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-repayment-template-frequency-type/index.html">GetLoanProductsRepaymentTemplateFrequencyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1607529652%2FProperties%2F-843168002" anchor-label="repaymentStartDateTypeOptions" id="-1607529652%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="repayment-start-date-type-options.html"><span>repayment</span><wbr></wbr><span>Start</span><wbr></wbr><span>Date</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1607529652%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="repayment-start-date-type-options.html">repaymentStartDateTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-repayment-start-date-type/index.html">GetLoanProductsRepaymentStartDateType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1030091436%2FProperties%2F-843168002" anchor-label="rescheduleStrategyTypeOptions" id="1030091436%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reschedule-strategy-type-options.html"><span>reschedule</span><wbr></wbr><span>Strategy</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1030091436%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="reschedule-strategy-type-options.html">rescheduleStrategyTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-reschedule-strategy-type/index.html">GetLoanProductsRescheduleStrategyType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1064680941%2FProperties%2F-843168002" anchor-label="transactionProcessingStrategyOptions" id="1064680941%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="transaction-processing-strategy-options.html"><span>transaction</span><wbr></wbr><span>Processing</span><wbr></wbr><span>Strategy</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1064680941%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="transaction-processing-strategy-options.html">transactionProcessingStrategyOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-transaction-processing-strategy-options/index.html">GetLoanProductsTransactionProcessingStrategyOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="531050698%2FProperties%2F-843168002" anchor-label="useBorrowerCycle" id="531050698%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="use-borrower-cycle.html"><span>use</span><wbr></wbr><span>Borrower</span><wbr></wbr><span><span>Cycle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="531050698%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="use-borrower-cycle.html">useBorrowerCycle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-959649159%2FProperties%2F-843168002" anchor-label="valueConditionTypeOptions" id="-959649159%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-condition-type-options.html"><span>value</span><wbr></wbr><span>Condition</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-959649159%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="value-condition-type-options.html">valueConditionTypeOptions</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../-get-loan-products-value-condition-type-options/index.html">GetLoanProductsValueConditionTypeOptions</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

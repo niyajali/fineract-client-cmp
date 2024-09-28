@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CommandWrapper</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            fineract-client
+                    </a>
+            </div>
+            <div class="library-version">
+1.0.4            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":fineract-client:dokkaHtml/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="fineract-client::org.mifos.fineract.client.models/CommandWrapper///PointingToDeclaration//-843168002">
+  <div class="breadcrumbs"><a href="../../../index.html">fineract-client</a><span class="delimiter">/</span><a href="../index.html">org.mifos.fineract.client.models</a><span class="delimiter">/</span><span class="current">CommandWrapper</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Command</span><wbr></wbr><span><span>Wrapper</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">CommandWrapper</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>cacheResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>create<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>createDatatable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>creditBureauId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>currencyResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>datatableResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>delete<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>deleteDatatable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>deleteMultiple<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>deleteOneToOne<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>deleteOperation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>entityId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>entityName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fullFilSurvey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>href<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>idempotencyKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>jobName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>json<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>loanDisburseDetailResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>noteResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>officeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>organisationCreditBureauId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>passwordPreferencesResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>permissionResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>productId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>registerDatatable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>registerSurvey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>savingsId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>subentityId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>surveyResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>taskPermissionName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transactionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>update<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>updateDatatable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>updateDisbursementDate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>updateMultiple<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>updateOneToOne<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>updateOperation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>userResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>workingDaysResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>cache</span><wbr></wbr><span><span>Resource</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>client</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>create</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>create</span><wbr></wbr><span><span>Datatable</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>credit</span><wbr></wbr><span>Bureau</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>currency</span><wbr></wbr><span><span>Resource</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>datatable</span><wbr></wbr><span><span>Resource</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>delete</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>delete</span><wbr></wbr><span><span>Datatable</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>delete</span><wbr></wbr><span><span>Multiple</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>delete</span><wbr></wbr><span>One</span><wbr></wbr><span>To</span><wbr></wbr><span><span>One</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>delete</span><wbr></wbr><span><span>Operation</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>entity</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>entity</span><wbr></wbr><span><span>Name</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>full</span><wbr></wbr><span>Fil</span><wbr></wbr><span><span>Survey</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>group</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>href</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>idempotency</span><wbr></wbr><span><span>Key</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>job</span><wbr></wbr><span><span>Name</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>json</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>loan</span><wbr></wbr><span>Disburse</span><wbr></wbr><span>Detail</span><wbr></wbr><span><span>Resource</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>loan</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>note</span><wbr></wbr><span><span>Resource</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>office</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>organisation</span><wbr></wbr><span>Credit</span><wbr></wbr><span>Bureau</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>password</span><wbr></wbr><span>Preferences</span><wbr></wbr><span><span>Resource</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>permission</span><wbr></wbr><span><span>Resource</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>product</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>register</span><wbr></wbr><span><span>Datatable</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>register</span><wbr></wbr><span><span>Survey</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>savings</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>subentity</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>survey</span><wbr></wbr><span><span>Resource</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>task</span><wbr></wbr><span>Permission</span><wbr></wbr><span><span>Name</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>transaction</span><wbr></wbr><span><span>Id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>update</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>update</span><wbr></wbr><span><span>Datatable</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>update</span><wbr></wbr><span>Disbursement</span><wbr></wbr><span><span>Date</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>update</span><wbr></wbr><span><span>Multiple</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>update</span><wbr></wbr><span>One</span><wbr></wbr><span>To</span><wbr></wbr><span><span>One</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>update</span><wbr></wbr><span><span>Operation</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>user</span><wbr></wbr><span><span>Resource</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>working</span><wbr></wbr><span>Days</span><wbr></wbr><span><span>Resource</span></span></u></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="68298253%2FConstructors%2F-843168002" anchor-label="CommandWrapper" id="68298253%2FConstructors%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-command-wrapper.html"><span>Command</span><wbr></wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="68298253%2FConstructors%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cacheResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">create<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">createDatatable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">creditBureauId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">currencyResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">datatableResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">delete<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">deleteDatatable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">deleteMultiple<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">deleteOneToOne<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">deleteOperation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">entityId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">entityName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">fullFilSurvey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">href<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">idempotencyKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">jobName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">json<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">loanDisburseDetailResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">noteResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">officeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">organisationCreditBureauId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">passwordPreferencesResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">permissionResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">productId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">registerDatatable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">registerSurvey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">savingsId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">subentityId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">surveyResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">taskPermissionName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">transactionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">update<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">updateDatatable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">updateDisbursementDate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">updateMultiple<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">updateOneToOne<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">updateOperation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">userResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">workingDaysResource<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-151331416%2FProperties%2F-843168002" anchor-label="cacheResource" id="-151331416%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cache-resource.html"><span>cache</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-151331416%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="cache-resource.html">cacheResource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2045220420%2FProperties%2F-843168002" anchor-label="clientId" id="-2045220420%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="client-id.html"><span>client</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2045220420%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="client-id.html">clientId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-191826682%2FProperties%2F-843168002" anchor-label="create" id="-191826682%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create.html"><span><span>create</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-191826682%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="create.html">create</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1353900752%2FProperties%2F-843168002" anchor-label="createDatatable" id="1353900752%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-datatable.html"><span>create</span><wbr></wbr><span><span>Datatable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1353900752%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="create-datatable.html">createDatatable</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1413331980%2FProperties%2F-843168002" anchor-label="creditBureauId" id="-1413331980%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="credit-bureau-id.html"><span>credit</span><wbr></wbr><span>Bureau</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1413331980%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="credit-bureau-id.html">creditBureauId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2054598115%2FProperties%2F-843168002" anchor-label="currencyResource" id="2054598115%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="currency-resource.html"><span>currency</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2054598115%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="currency-resource.html">currencyResource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1278302842%2FProperties%2F-843168002" anchor-label="datatableResource" id="-1278302842%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="datatable-resource.html"><span>datatable</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1278302842%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="datatable-resource.html">datatableResource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-450337993%2FProperties%2F-843168002" anchor-label="delete" id="-450337993%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete.html"><span><span>delete</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-450337993%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="delete.html">delete</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1789254591%2FProperties%2F-843168002" anchor-label="deleteDatatable" id="1789254591%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-datatable.html"><span>delete</span><wbr></wbr><span><span>Datatable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1789254591%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="delete-datatable.html">deleteDatatable</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1155394297%2FProperties%2F-843168002" anchor-label="deleteMultiple" id="-1155394297%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-multiple.html"><span>delete</span><wbr></wbr><span><span>Multiple</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1155394297%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="delete-multiple.html">deleteMultiple</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1256429166%2FProperties%2F-843168002" anchor-label="deleteOneToOne" id="-1256429166%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-one-to-one.html"><span>delete</span><wbr></wbr><span>One</span><wbr></wbr><span>To</span><wbr></wbr><span><span>One</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1256429166%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="delete-one-to-one.html">deleteOneToOne</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="699688476%2FProperties%2F-843168002" anchor-label="deleteOperation" id="699688476%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-operation.html"><span>delete</span><wbr></wbr><span><span>Operation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="699688476%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="delete-operation.html">deleteOperation</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="651176612%2FProperties%2F-843168002" anchor-label="entityId" id="651176612%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="entity-id.html"><span>entity</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="651176612%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="entity-id.html">entityId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-383231308%2FProperties%2F-843168002" anchor-label="entityName" id="-383231308%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="entity-name.html"><span>entity</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-383231308%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="entity-name.html">entityName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1013589220%2FProperties%2F-843168002" anchor-label="fullFilSurvey" id="1013589220%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="full-fil-survey.html"><span>full</span><wbr></wbr><span>Fil</span><wbr></wbr><span><span>Survey</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1013589220%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="full-fil-survey.html">fullFilSurvey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="952667870%2FProperties%2F-843168002" anchor-label="groupId" id="952667870%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="group-id.html"><span>group</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="952667870%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="group-id.html">groupId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="224691959%2FProperties%2F-843168002" anchor-label="href" id="224691959%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="href.html"><span><span>href</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="224691959%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="href.html">href</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1221657332%2FProperties%2F-843168002" anchor-label="idempotencyKey" id="1221657332%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="idempotency-key.html"><span>idempotency</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1221657332%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="idempotency-key.html">idempotencyKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="867086000%2FProperties%2F-843168002" anchor-label="jobName" id="867086000%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="job-name.html"><span>job</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="867086000%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="job-name.html">jobName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1664444454%2FProperties%2F-843168002" anchor-label="json" id="-1664444454%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="json.html"><span><span>json</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1664444454%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="json.html">json</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-616721008%2FProperties%2F-843168002" anchor-label="loanDisburseDetailResource" id="-616721008%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="loan-disburse-detail-resource.html"><span>loan</span><wbr></wbr><span>Disburse</span><wbr></wbr><span>Detail</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-616721008%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="loan-disburse-detail-resource.html">loanDisburseDetailResource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1583307081%2FProperties%2F-843168002" anchor-label="loanId" id="-1583307081%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="loan-id.html"><span>loan</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1583307081%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="loan-id.html">loanId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1487193950%2FProperties%2F-843168002" anchor-label="noteResource" id="-1487193950%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="note-resource.html"><span>note</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1487193950%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="note-resource.html">noteResource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="475910187%2FProperties%2F-843168002" anchor-label="officeId" id="475910187%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="office-id.html"><span>office</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="475910187%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="office-id.html">officeId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1455290938%2FProperties%2F-843168002" anchor-label="organisationCreditBureauId" id="1455290938%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="organisation-credit-bureau-id.html"><span>organisation</span><wbr></wbr><span>Credit</span><wbr></wbr><span>Bureau</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1455290938%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="organisation-credit-bureau-id.html">organisationCreditBureauId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1225251821%2FProperties%2F-843168002" anchor-label="passwordPreferencesResource" id="1225251821%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="password-preferences-resource.html"><span>password</span><wbr></wbr><span>Preferences</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1225251821%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="password-preferences-resource.html">passwordPreferencesResource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1743125157%2FProperties%2F-843168002" anchor-label="permissionResource" id="1743125157%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="permission-resource.html"><span>permission</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1743125157%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="permission-resource.html">permissionResource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1450321838%2FProperties%2F-843168002" anchor-label="productId" id="1450321838%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="product-id.html"><span>product</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1450321838%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="product-id.html">productId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1002767369%2FProperties%2F-843168002" anchor-label="registerDatatable" id="-1002767369%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register-datatable.html"><span>register</span><wbr></wbr><span><span>Datatable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1002767369%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="register-datatable.html">registerDatatable</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="737891397%2FProperties%2F-843168002" anchor-label="registerSurvey" id="737891397%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register-survey.html"><span>register</span><wbr></wbr><span><span>Survey</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="737891397%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="register-survey.html">registerSurvey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2079229532%2FProperties%2F-843168002" anchor-label="savingsId" id="-2079229532%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="savings-id.html"><span>savings</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2079229532%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="savings-id.html">savingsId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-206633158%2FProperties%2F-843168002" anchor-label="subentityId" id="-206633158%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="subentity-id.html"><span>subentity</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-206633158%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="subentity-id.html">subentityId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-738451206%2FProperties%2F-843168002" anchor-label="surveyResource" id="-738451206%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="survey-resource.html"><span>survey</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-738451206%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="survey-resource.html">surveyResource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1230742019%2FProperties%2F-843168002" anchor-label="taskPermissionName" id="1230742019%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="task-permission-name.html"><span>task</span><wbr></wbr><span>Permission</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1230742019%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="task-permission-name.html">taskPermissionName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1691803359%2FProperties%2F-843168002" anchor-label="transactionId" id="1691803359%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="transaction-id.html"><span>transaction</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1691803359%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="transaction-id.html">transactionId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1111870937%2FProperties%2F-843168002" anchor-label="update" id="1111870937%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update.html"><span><span>update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1111870937%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="update.html">update</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2105100125%2FProperties%2F-843168002" anchor-label="updateDatatable" id="2105100125%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-datatable.html"><span>update</span><wbr></wbr><span><span>Datatable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2105100125%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="update-datatable.html">updateDatatable</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1862824918%2FProperties%2F-843168002" anchor-label="updateDisbursementDate" id="-1862824918%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-disbursement-date.html"><span>update</span><wbr></wbr><span>Disbursement</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1862824918%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="update-disbursement-date.html">updateDisbursementDate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-729563735%2FProperties%2F-843168002" anchor-label="updateMultiple" id="-729563735%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-multiple.html"><span>update</span><wbr></wbr><span><span>Multiple</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-729563735%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="update-multiple.html">updateMultiple</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-830598604%2FProperties%2F-843168002" anchor-label="updateOneToOne" id="-830598604%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-one-to-one.html"><span>update</span><wbr></wbr><span>One</span><wbr></wbr><span>To</span><wbr></wbr><span><span>One</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-830598604%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="update-one-to-one.html">updateOneToOne</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1015534010%2FProperties%2F-843168002" anchor-label="updateOperation" id="1015534010%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-operation.html"><span>update</span><wbr></wbr><span><span>Operation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1015534010%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="update-operation.html">updateOperation</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="366517225%2FProperties%2F-843168002" anchor-label="userResource" id="366517225%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="user-resource.html"><span>user</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="366517225%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="user-resource.html">userResource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1348610690%2FProperties%2F-843168002" anchor-label="workingDaysResource" id="1348610690%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="working-days-resource.html"><span>working</span><wbr></wbr><span>Days</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1348610690%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="working-days-resource.html">workingDaysResource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

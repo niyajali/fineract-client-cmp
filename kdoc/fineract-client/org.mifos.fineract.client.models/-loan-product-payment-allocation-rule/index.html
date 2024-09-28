@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>LoanProductPaymentAllocationRule</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            fineract-client
+                    </a>
+            </div>
+            <div class="library-version">
+1.0.4            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":fineract-client:dokkaHtml/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="fineract-client::org.mifos.fineract.client.models/LoanProductPaymentAllocationRule///PointingToDeclaration//-843168002">
+  <div class="breadcrumbs"><a href="../../../index.html">fineract-client</a><span class="delimiter">/</span><a href="../index.html">org.mifos.fineract.client.models</a><span class="delimiter">/</span><span class="current">LoanProductPaymentAllocationRule</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Loan</span><wbr></wbr><span>Product</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span><span>Rule</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">LoanProductPaymentAllocationRule</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>createdBy<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>createdDate<span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>createdDateTime<span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastModifiedBy<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastModifiedDate<span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastModifiedDateTime<span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>allocationTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-allocation-types/index.html">LoanProductPaymentAllocationRule.AllocationTypes</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>futureInstallmentAllocationRule<span class="token operator">: </span><a href="-future-installment-allocation-rule/index.html">LoanProductPaymentAllocationRule.FutureInstallmentAllocationRule</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>loanProduct<span class="token operator">: </span><a href="../-loan-product/index.html">LoanProduct</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>new<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transactionType<span class="token operator">: </span><a href="-transaction-type/index.html">LoanProductPaymentAllocationRule.TransactionType</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>created</span><wbr></wbr><span><span>By</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>created</span><wbr></wbr><span><span>Date</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>created</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Time</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>last</span><wbr></wbr><span>Modified</span><wbr></wbr><span><span>By</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>last</span><wbr></wbr><span>Modified</span><wbr></wbr><span><span>Date</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>last</span><wbr></wbr><span>Modified</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Time</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>allocation</span><wbr></wbr><span><span>Types</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>future</span><wbr></wbr><span>Installment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span><span>Rule</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>id</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>loan</span><wbr></wbr><span><span>Product</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>new</span></span></u></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>transaction</span><wbr></wbr><span><span>Type</span></span></u></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="325810546%2FConstructors%2F-843168002" anchor-label="LoanProductPaymentAllocationRule" id="325810546%2FConstructors%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-loan-product-payment-allocation-rule.html"><span>Loan</span><wbr></wbr><span>Product</span><wbr></wbr><span>Payment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="325810546%2FConstructors%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">createdBy<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">createdDate<span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span><span class="token punctuation">, </span></span><span class="parameter ">createdDateTime<span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span><span class="token punctuation">, </span></span><span class="parameter ">lastModifiedBy<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">lastModifiedDate<span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span><span class="token punctuation">, </span></span><span class="parameter ">lastModifiedDateTime<span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span><span class="token punctuation">, </span></span><span class="parameter ">allocationTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-allocation-types/index.html">LoanProductPaymentAllocationRule.AllocationTypes</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">futureInstallmentAllocationRule<span class="token operator">: </span><a href="-future-installment-allocation-rule/index.html">LoanProductPaymentAllocationRule.FutureInstallmentAllocationRule</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">loanProduct<span class="token operator">: </span><a href="../-loan-product/index.html">LoanProduct</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">new<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">transactionType<span class="token operator">: </span><a href="-transaction-type/index.html">LoanProductPaymentAllocationRule.TransactionType</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-862365193%2FClasslikes%2F-843168002" anchor-label="AllocationTypes" id="-862365193%2FClasslikes%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-allocation-types/index.html"><span>Allocation</span><wbr></wbr><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-862365193%2FClasslikes%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">enum </span><a href="-allocation-types/index.html">AllocationTypes</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-allocation-types/index.html">LoanProductPaymentAllocationRule.AllocationTypes</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Values: PAST_DUE_PENALTY,PAST_DUE_FEE,PAST_DUE_PRINCIPAL,PAST_DUE_INTEREST,DUE_PENALTY,DUE_FEE,DUE_PRINCIPAL,DUE_INTEREST,IN_ADVANCE_PENALTY,IN_ADVANCE_FEE,IN_ADVANCE_PRINCIPAL,IN_ADVANCE_INTEREST</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1376646082%2FClasslikes%2F-843168002" anchor-label="FutureInstallmentAllocationRule" id="-1376646082%2FClasslikes%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-future-installment-allocation-rule/index.html"><span>Future</span><wbr></wbr><span>Installment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1376646082%2FClasslikes%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">enum </span><a href="-future-installment-allocation-rule/index.html">FutureInstallmentAllocationRule</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-future-installment-allocation-rule/index.html">LoanProductPaymentAllocationRule.FutureInstallmentAllocationRule</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Values: NEXT_INSTALLMENT,LAST_INSTALLMENT,REAMORTIZATION</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="628566808%2FClasslikes%2F-843168002" anchor-label="TransactionType" id="628566808%2FClasslikes%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transaction-type/index.html"><span>Transaction</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="628566808%2FClasslikes%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">enum </span><a href="-transaction-type/index.html">TransactionType</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-transaction-type/index.html">LoanProductPaymentAllocationRule.TransactionType</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Values: DEFAULT,REPAYMENT,DOWN_PAYMENT,MERCHANT_ISSUED_REFUND,PAYOUT_REFUND,GOODWILL_CREDIT,CHARGE_REFUND,CHARGE_ADJUSTMENT,WAIVE_INTEREST,CHARGE_PAYMENT,REFUND_FOR_ACTIVE_LOAN</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1826942564%2FProperties%2F-843168002" anchor-label="allocationTypes" id="1826942564%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allocation-types.html"><span>allocation</span><wbr></wbr><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1826942564%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="allocation-types.html">allocationTypes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-allocation-types/index.html">LoanProductPaymentAllocationRule.AllocationTypes</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2088242370%2FProperties%2F-843168002" anchor-label="createdBy" id="-2088242370%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="created-by.html"><span>created</span><wbr></wbr><span><span>By</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2088242370%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="created-by.html">createdBy</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1261605319%2FProperties%2F-843168002" anchor-label="createdDate" id="1261605319%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="created-date.html"><span>created</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1261605319%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="created-date.html">createdDate</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1630705030%2FProperties%2F-843168002" anchor-label="createdDateTime" id="-1630705030%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="created-date-time.html"><span>created</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1630705030%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="created-date-time.html">createdDateTime</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="708689579%2FProperties%2F-843168002" anchor-label="futureInstallmentAllocationRule" id="708689579%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="future-installment-allocation-rule.html"><span>future</span><wbr></wbr><span>Installment</span><wbr></wbr><span>Allocation</span><wbr></wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="708689579%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="future-installment-allocation-rule.html">futureInstallmentAllocationRule</a><span class="token operator">: </span><a href="-future-installment-allocation-rule/index.html">LoanProductPaymentAllocationRule.FutureInstallmentAllocationRule</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1896859902%2FProperties%2F-843168002" anchor-label="id" id="-1896859902%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1896859902%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-42647481%2FProperties%2F-843168002" anchor-label="lastModifiedBy" id="-42647481%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="last-modified-by.html"><span>last</span><wbr></wbr><span>Modified</span><wbr></wbr><span><span>By</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-42647481%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="last-modified-by.html">lastModifiedBy</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-16727920%2FProperties%2F-843168002" anchor-label="lastModifiedDate" id="-16727920%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="last-modified-date.html"><span>last</span><wbr></wbr><span>Modified</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-16727920%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="last-modified-date.html">lastModifiedDate</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1323633859%2FProperties%2F-843168002" anchor-label="lastModifiedDateTime" id="1323633859%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="last-modified-date-time.html"><span>last</span><wbr></wbr><span>Modified</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1323633859%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="last-modified-date-time.html">lastModifiedDateTime</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.datetime/LocalDateTime///PointingToDeclaration/">LocalDateTime</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-730448194%2FProperties%2F-843168002" anchor-label="loanProduct" id="-730448194%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="loan-product.html"><span>loan</span><wbr></wbr><span><span>Product</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-730448194%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="loan-product.html">loanProduct</a><span class="token operator">: </span><a href="../-loan-product/index.html">LoanProduct</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1589816803%2FProperties%2F-843168002" anchor-label="new" id="-1589816803%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="new.html"><span><span>new</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1589816803%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="new.html">new</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-977092731%2FProperties%2F-843168002" anchor-label="transactionType" id="-977092731%2FProperties%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="transaction-type.html"><span>transaction</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-977092731%2FProperties%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="transaction-type.html">transactionType</a><span class="token operator">: </span><a href="-transaction-type/index.html">LoanProductPaymentAllocationRule.TransactionType</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

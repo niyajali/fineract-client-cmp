@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>TellerCashManagementApi</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            fineract-client
+                    </a>
+            </div>
+            <div class="library-version">
+1.0.4            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":fineract-client:dokkaHtml/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="fineract-client::org.mifos.fineract.client.apis/TellerCashManagementApi///PointingToDeclaration//-843168002">
+  <div class="breadcrumbs"><a href="../../../index.html">fineract-client</a><span class="delimiter">/</span><a href="../index.html">org.mifos.fineract.client.apis</a><span class="delimiter">/</span><span class="current">TellerCashManagementApi</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Teller</span><wbr></wbr><span>Cash</span><wbr></wbr><span>Management</span><wbr></wbr><span><span>Api</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">TellerCashManagementApi</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1377816304%2FFunctions%2F-843168002" anchor-label="allocateCashToCashier" id="1377816304%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allocate-cash-to-cashier.html"><span>allocate</span><wbr></wbr><span>Cash</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Cashier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1377816304%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="allocate-cash-to-cashier.html"><span class="token function">allocateCashToCashier</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">cashierId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">postTellersTellerIdCashiersCashierIdAllocateRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-tellers-teller-id-cashiers-cashier-id-allocate-request/index.html">PostTellersTellerIdCashiersCashierIdAllocateRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-tellers-teller-id-cashiers-cashier-id-allocate-response/index.html">PostTellersTellerIdCashiersCashierIdAllocateResponse</a></div><div class="brief "><p class="paragraph">Allocate Cash To Cashier Mandatory Fields:  Date, Amount, Currency, Notes/Comments Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1791960996%2FFunctions%2F-843168002" anchor-label="createCashier" id="1791960996%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-cashier.html"><span>create</span><wbr></wbr><span><span>Cashier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1791960996%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="create-cashier.html"><span class="token function">createCashier</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">postTellersTellerIdCashiersRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-tellers-teller-id-cashiers-request/index.html">PostTellersTellerIdCashiersRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-tellers-teller-id-cashiers-response/index.html">PostTellersTellerIdCashiersResponse</a></div><div class="brief "><p class="paragraph">Create Cashiers Mandatory Fields:  Cashier/staff, Fromm Date, To Date, Full Day or From time and To time    Optional Fields:  Description/Notes Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1800421824%2FFunctions%2F-843168002" anchor-label="createTeller" id="-1800421824%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-teller.html"><span>create</span><wbr></wbr><span><span>Teller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1800421824%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="create-teller.html"><span class="token function">createTeller</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">postTellersRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-tellers-request/index.html">PostTellersRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-tellers-response/index.html">PostTellersResponse</a></div><div class="brief "><p class="paragraph">Create teller Mandatory Fields Teller name, OfficeId, Description, Start Date, Status Optional Fields End Date Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1725021576%2FFunctions%2F-843168002" anchor-label="deleteCashier" id="1725021576%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-cashier.html"><span>delete</span><wbr></wbr><span><span>Cashier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1725021576%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="delete-cashier.html"><span class="token function">deleteCashier</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">cashierId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-delete-tellers-teller-id-cashiers-cashier-id-response/index.html">DeleteTellersTellerIdCashiersCashierIdResponse</a></div><div class="brief "><p class="paragraph">Delete Cashier</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="666690571%2FFunctions%2F-843168002" anchor-label="deleteTeller" id="666690571%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-teller.html"><span>delete</span><wbr></wbr><span><span>Teller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="666690571%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="delete-teller.html"><span class="token function">deleteTeller</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1098079740%2FFunctions%2F-843168002" anchor-label="findCashierData" id="-1098079740%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-cashier-data.html"><span>find</span><wbr></wbr><span>Cashier</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1098079740%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="find-cashier-data.html"><span class="token function">findCashierData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">cashierId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-tellers-teller-id-cashiers-cashier-id-response/index.html">GetTellersTellerIdCashiersCashierIdResponse</a></div><div class="brief "><p class="paragraph">Retrieve a cashier</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1087468519%2FFunctions%2F-843168002" anchor-label="findTeller" id="-1087468519%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-teller.html"><span>find</span><wbr></wbr><span><span>Teller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1087468519%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="find-teller.html"><span class="token function">findTeller</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-tellers-response/index.html">GetTellersResponse</a></div><div class="brief "><p class="paragraph">Retrieve tellers</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="578206239%2FFunctions%2F-843168002" anchor-label="findTransactionData" id="578206239%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-transaction-data.html"><span>find</span><wbr></wbr><span>Transaction</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="578206239%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="find-transaction-data.html"><span class="token function">findTransactionData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">transactionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1497350000%2FFunctions%2F-843168002" anchor-label="getCashierData1" id="-1497350000%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-cashier-data1.html"><span>get</span><wbr></wbr><span>Cashier</span><wbr></wbr><span><span>Data1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1497350000%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-cashier-data1.html"><span class="token function">getCashierData1</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">fromdate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">todate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-tellers-teller-id-cashiers-response/index.html">GetTellersTellerIdCashiersResponse</a></div><div class="brief "><p class="paragraph">List Cashiers</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="644566281%2FFunctions%2F-843168002" anchor-label="getCashierTemplate" id="644566281%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-cashier-template.html"><span>get</span><wbr></wbr><span>Cashier</span><wbr></wbr><span><span>Template</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="644566281%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-cashier-template.html"><span class="token function">getCashierTemplate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-tellers-teller-id-cashiers-template-response/index.html">GetTellersTellerIdCashiersTemplateResponse</a></div><div class="brief "><p class="paragraph">Find Cashiers</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-319229145%2FFunctions%2F-843168002" anchor-label="getCashierTxnTemplate" id="-319229145%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-cashier-txn-template.html"><span>get</span><wbr></wbr><span>Cashier</span><wbr></wbr><span>Txn</span><wbr></wbr><span><span>Template</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-319229145%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-cashier-txn-template.html"><span class="token function">getCashierTxnTemplate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">cashierId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-tellers-teller-id-cashiers-cashiers-id-transactions-template-response/index.html">GetTellersTellerIdCashiersCashiersIdTransactionsTemplateResponse</a></div><div class="brief "><p class="paragraph">Retrieve Cashier Transaction Template</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="371558754%2FFunctions%2F-843168002" anchor-label="getJournalData" id="371558754%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-journal-data.html"><span>get</span><wbr></wbr><span>Journal</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="371558754%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-journal-data.html"><span class="token function">getJournalData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">cashierId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">dateRange<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1579221265%2FFunctions%2F-843168002" anchor-label="getTellerData" id="-1579221265%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-teller-data.html"><span>get</span><wbr></wbr><span>Teller</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1579221265%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-teller-data.html"><span class="token function">getTellerData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">officeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.mifos.fineract.client.models/-get-tellers-response/index.html">GetTellersResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List all tellers Retrieves list tellers Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1641422154%2FFunctions%2F-843168002" anchor-label="getTransactionData" id="1641422154%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-transaction-data.html"><span>get</span><wbr></wbr><span>Transaction</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1641422154%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-transaction-data.html"><span class="token function">getTransactionData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">dateRange<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="997408757%2FFunctions%2F-843168002" anchor-label="getTransactionsForCashier" id="997408757%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-transactions-for-cashier.html"><span>get</span><wbr></wbr><span>Transactions</span><wbr></wbr><span>For</span><wbr></wbr><span><span>Cashier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="997408757%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-transactions-for-cashier.html"><span class="token function">getTransactionsForCashier</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">cashierId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">currencyCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">orderBy<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">sortOrder<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.mifos.fineract.client.models/-get-tellers-teller-id-cashiers-cashiers-id-transactions-response/index.html">GetTellersTellerIdCashiersCashiersIdTransactionsResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Retrieve Cashier Transaction</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-794003211%2FFunctions%2F-843168002" anchor-label="getTransactionsWtihSummaryForCashier" id="-794003211%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-transactions-wtih-summary-for-cashier.html"><span>get</span><wbr></wbr><span>Transactions</span><wbr></wbr><span>Wtih</span><wbr></wbr><span>Summary</span><wbr></wbr><span>For</span><wbr></wbr><span><span>Cashier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-794003211%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-transactions-wtih-summary-for-cashier.html"><span class="token function">getTransactionsWtihSummaryForCashier</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">cashierId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">currencyCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">offset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">orderBy<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">sortOrder<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-tellers-teller-id-cashiers-cashiers-id-summary-and-transactions-response/index.html">GetTellersTellerIdCashiersCashiersIdSummaryAndTransactionsResponse</a></div><div class="brief "><p class="paragraph">Transactions Wtih Summary For Cashier</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-263137861%2FFunctions%2F-843168002" anchor-label="settleCashFromCashier" id="-263137861%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="settle-cash-from-cashier.html"><span>settle</span><wbr></wbr><span>Cash</span><wbr></wbr><span>From</span><wbr></wbr><span><span>Cashier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-263137861%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="settle-cash-from-cashier.html"><span class="token function">settleCashFromCashier</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">cashierId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">postTellersTellerIdCashiersCashierIdSettleRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-tellers-teller-id-cashiers-cashier-id-settle-request/index.html">PostTellersTellerIdCashiersCashierIdSettleRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-tellers-teller-id-cashiers-cashier-id-settle-response/index.html">PostTellersTellerIdCashiersCashierIdSettleResponse</a></div><div class="brief "><p class="paragraph">Settle Cash From Cashier Mandatory Fields Date, Amount, Currency, Notes/Comments Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="177684514%2FFunctions%2F-843168002" anchor-label="updateCashier" id="177684514%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-cashier.html"><span>update</span><wbr></wbr><span><span>Cashier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="177684514%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="update-cashier.html"><span class="token function">updateCashier</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">cashierId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">putTellersTellerIdCashiersCashierIdRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-tellers-teller-id-cashiers-cashier-id-request/index.html">PutTellersTellerIdCashiersCashierIdRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-tellers-teller-id-cashiers-cashier-id-response/index.html">PutTellersTellerIdCashiersCashierIdResponse</a></div><div class="brief "><p class="paragraph">Update Cashier</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="143057656%2FFunctions%2F-843168002" anchor-label="updateTeller" id="143057656%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-teller.html"><span>update</span><wbr></wbr><span><span>Teller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="143057656%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="update-teller.html"><span class="token function">updateTeller</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tellerId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">putTellersRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-tellers-request/index.html">PutTellersRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-tellers-response/index.html">PutTellersResponse</a></div><div class="brief "><p class="paragraph">Update teller</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

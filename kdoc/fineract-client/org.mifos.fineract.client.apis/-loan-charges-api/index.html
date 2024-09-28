@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>LoanChargesApi</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            fineract-client
+                    </a>
+            </div>
+            <div class="library-version">
+1.0.4            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":fineract-client:dokkaHtml/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="fineract-client::org.mifos.fineract.client.apis/LoanChargesApi///PointingToDeclaration//-843168002">
+  <div class="breadcrumbs"><a href="../../../index.html">fineract-client</a><span class="delimiter">/</span><a href="../index.html">org.mifos.fineract.client.apis</a><span class="delimiter">/</span><span class="current">LoanChargesApi</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Loan</span><wbr></wbr><span>Charges</span><wbr></wbr><span><span>Api</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">LoanChargesApi</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1120042124%2FFunctions%2F-843168002" anchor-label="deleteLoanCharge" id="1120042124%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-loan-charge.html"><span>delete</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1120042124%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="delete-loan-charge.html"><span class="token function">deleteLoanCharge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-delete-loans-loan-id-charges-charge-id-response/index.html">DeleteLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Delete a Loan Charge Note: Currently, A Loan Charge may only be removed from Loans that are not yet approved. Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="626938268%2FFunctions%2F-843168002" anchor-label="deleteLoanCharge1" id="626938268%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-loan-charge1.html"><span>delete</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="626938268%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="delete-loan-charge1.html"><span class="token function">deleteLoanCharge1</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-delete-loans-loan-id-charges-charge-id-response/index.html">DeleteLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Delete a Loan Charge Note: Currently, A Loan Charge may only be removed from Loans that are not yet approved. Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2066294109%2FFunctions%2F-843168002" anchor-label="deleteLoanCharge2" id="2066294109%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-loan-charge2.html"><span>delete</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2066294109%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="delete-loan-charge2.html"><span class="token function">deleteLoanCharge2</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-delete-loans-loan-id-charges-charge-id-response/index.html">DeleteLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Delete a Loan Charge Note: Currently, A Loan Charge may only be removed from Loans that are not yet approved. Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-148204631%2FFunctions%2F-843168002" anchor-label="deleteLoanCharge3" id="-148204631%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-loan-charge3.html"><span>delete</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-148204631%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="delete-loan-charge3.html"><span class="token function">deleteLoanCharge3</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-delete-loans-loan-id-charges-charge-id-response/index.html">DeleteLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Delete a Loan Charge Note: Currently, A Loan Charge may only be removed from Loans that are not yet approved. Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-377422112%2FFunctions%2F-843168002" anchor-label="executeLoanCharge" id="-377422112%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execute-loan-charge.html"><span>execute</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-377422112%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="execute-loan-charge.html"><span class="token function">executeLoanCharge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">postLoansLoanIdChargesRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-request/index.html">PostLoansLoanIdChargesRequest</a><span class="token punctuation">, </span></span><span class="parameter ">command<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-response/index.html">PostLoansLoanIdChargesResponse</a></div><div class="brief "><p class="paragraph">Create a Loan Charge (no command provided) or Pay a charge (command=pay) Creates a Loan Charge | Pay a Loan Charge Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1852886472%2FFunctions%2F-843168002" anchor-label="executeLoanCharge1" id="-1852886472%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execute-loan-charge1.html"><span>execute</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1852886472%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="execute-loan-charge1.html"><span class="token function">executeLoanCharge1</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">postLoansLoanIdChargesRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-request/index.html">PostLoansLoanIdChargesRequest</a><span class="token punctuation">, </span></span><span class="parameter ">command<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-response/index.html">PostLoansLoanIdChargesResponse</a></div><div class="brief "><p class="paragraph">Create a Loan Charge (no command provided) or Pay a charge (command=pay) Creates a Loan Charge | Pay a Loan Charge Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1684858649%2FFunctions%2F-843168002" anchor-label="executeLoanCharge2" id="1684858649%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execute-loan-charge2.html"><span>execute</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1684858649%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="execute-loan-charge2.html"><span class="token function">executeLoanCharge2</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">postLoansLoanIdChargesChargeIdRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-charge-id-request/index.html">PostLoansLoanIdChargesChargeIdRequest</a><span class="token punctuation">, </span></span><span class="parameter ">command<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-charge-id-response/index.html">PostLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Pay / Waive / Adjustment for Loan Charge Loan Charge will be paid if the loan is linked with a savings account | Waive Loan Charge | Add Charge Adjustment Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-15839643%2FFunctions%2F-843168002" anchor-label="executeLoanCharge3" id="-15839643%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execute-loan-charge3.html"><span>execute</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-15839643%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="execute-loan-charge3.html"><span class="token function">executeLoanCharge3</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">postLoansLoanIdChargesChargeIdRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-charge-id-request/index.html">PostLoansLoanIdChargesChargeIdRequest</a><span class="token punctuation">, </span></span><span class="parameter ">command<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-charge-id-response/index.html">PostLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Pay / Waive / Adjustment for Loan Charge Loan Charge will be paid if the loan is linked with a savings account | Waive Loan Charge | Add Charge Adjustment Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-664476826%2FFunctions%2F-843168002" anchor-label="executeLoanCharge4" id="-664476826%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execute-loan-charge4.html"><span>execute</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge4</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-664476826%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="execute-loan-charge4.html"><span class="token function">executeLoanCharge4</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">postLoansLoanIdChargesChargeIdRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-charge-id-request/index.html">PostLoansLoanIdChargesChargeIdRequest</a><span class="token punctuation">, </span></span><span class="parameter ">command<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-charge-id-response/index.html">PostLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Pay / Waive / Adjustment for Loan Charge Loan Charge will be paid if the loan is linked with a savings account | Waive Loan Charge | Add Charge Adjustment Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="496807730%2FFunctions%2F-843168002" anchor-label="executeLoanCharge5" id="496807730%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execute-loan-charge5.html"><span>execute</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge5</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="496807730%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="execute-loan-charge5.html"><span class="token function">executeLoanCharge5</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">postLoansLoanIdChargesChargeIdRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-charge-id-request/index.html">PostLoansLoanIdChargesChargeIdRequest</a><span class="token punctuation">, </span></span><span class="parameter ">command<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-post-loans-loan-id-charges-charge-id-response/index.html">PostLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Pay / Waive / Adjustment for Loan Charge Loan Charge will be paid if the loan is linked with a savings account | Waive Loan Charge | Add Charge Adjustment Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1134864845%2FFunctions%2F-843168002" anchor-label="retrieveAllLoanCharges" id="1134864845%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="retrieve-all-loan-charges.html"><span>retrieve</span><wbr></wbr><span>All</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charges</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1134864845%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="retrieve-all-loan-charges.html"><span class="token function">retrieveAllLoanCharges</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.mifos.fineract.client.models/-get-loans-loan-id-charges-charge-id-response/index.html">GetLoansLoanIdChargesChargeIdResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List Loan Charges It lists all the Loan Charges specific to a Loan   Example Requests:  loans/1/charges   loans/1/charges?fields=name,amountOrPercentage Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1741299769%2FFunctions%2F-843168002" anchor-label="retrieveAllLoanCharges1" id="-1741299769%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="retrieve-all-loan-charges1.html"><span>retrieve</span><wbr></wbr><span>All</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charges1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1741299769%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="retrieve-all-loan-charges1.html"><span class="token function">retrieveAllLoanCharges1</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.mifos.fineract.client.models/-get-loans-loan-id-charges-charge-id-response/index.html">GetLoansLoanIdChargesChargeIdResponse</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List Loan Charges It lists all the Loan Charges specific to a Loan   Example Requests:  loans/1/charges   loans/1/charges?fields=name,amountOrPercentage Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1350612451%2FFunctions%2F-843168002" anchor-label="retrieveLoanCharge" id="-1350612451%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="retrieve-loan-charge.html"><span>retrieve</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1350612451%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="retrieve-loan-charge.html"><span class="token function">retrieveLoanCharge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-loans-loan-id-charges-charge-id-response/index.html">GetLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Retrieve a Loan Charge Retrieves Loan Charge according to the Loan ID and Loan Charge IDExample Requests:  /loans/1/charges/1   /loans/1/charges/1?fields=name,amountOrPercentage Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="211045995%2FFunctions%2F-843168002" anchor-label="retrieveLoanCharge1" id="211045995%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="retrieve-loan-charge1.html"><span>retrieve</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="211045995%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="retrieve-loan-charge1.html"><span class="token function">retrieveLoanCharge1</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-loans-loan-id-charges-charge-id-response/index.html">GetLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Retrieve a Loan Charge Retrieves Loan Charge according to the Loan ID and Loan Charge External IDExample Requests:  /loans/1/charges/1   /loans/1/charges/external-id/1?fields=name,amountOrPercentage Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1650401836%2FFunctions%2F-843168002" anchor-label="retrieveLoanCharge2" id="1650401836%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="retrieve-loan-charge2.html"><span>retrieve</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1650401836%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="retrieve-loan-charge2.html"><span class="token function">retrieveLoanCharge2</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-loans-loan-id-charges-charge-id-response/index.html">GetLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Retrieve a Loan Charge Retrieves Loan Charge according to the Loan external ID and Loan Charge IDExample Requests:  /loans/1/charges/1   /loans/1/charges/1?fields=name,amountOrPercentage Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-388720456%2FFunctions%2F-843168002" anchor-label="retrieveLoanCharge3" id="-388720456%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="retrieve-loan-charge3.html"><span>retrieve</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-388720456%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="retrieve-loan-charge3.html"><span class="token function">retrieveLoanCharge3</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-loans-loan-id-charges-charge-id-response/index.html">GetLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Retrieve a Loan Charge Retrieves Loan Charge according to the Loan External ID and Loan Charge External IDExample Requests:  /loans/1/charges/1   /loans/1/charges/1?fields=name,amountOrPercentage Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1474817833%2FFunctions%2F-843168002" anchor-label="retrieveTemplate8" id="-1474817833%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="retrieve-template8.html"><span>retrieve</span><wbr></wbr><span><span>Template8</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1474817833%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="retrieve-template8.html"><span class="token function">retrieveTemplate8</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-loans-loan-id-charges-template-response/index.html">GetLoansLoanIdChargesTemplateResponse</a></div><div class="brief "><p class="paragraph">Retrieve Loan Charges Template This is a convenience resource. It can be useful when building maintenance user interface screens for client applications. The template data returned consists of any or all of:  Field Defaults Allowed description Lists Example Request:  loans/1/charges/template Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-539832733%2FFunctions%2F-843168002" anchor-label="retrieveTemplate9" id="-539832733%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="retrieve-template9.html"><span>retrieve</span><wbr></wbr><span><span>Template9</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-539832733%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="retrieve-template9.html"><span class="token function">retrieveTemplate9</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-get-loans-loan-id-charges-template-response/index.html">GetLoansLoanIdChargesTemplateResponse</a></div><div class="brief "><p class="paragraph">Retrieve Loan Charges Template This is a convenience resource. It can be useful when building maintenance user interface screens for client applications. The template data returned consists of any or all of:  Field Defaults Allowed description Lists Example Request:  loans/1/charges/template Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="744321762%2FFunctions%2F-843168002" anchor-label="updateLoanCharge" id="744321762%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-loan-charge.html"><span>update</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="744321762%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="update-loan-charge.html"><span class="token function">updateLoanCharge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">putLoansLoanIdChargesChargeIdRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-loans-loan-id-charges-charge-id-request/index.html">PutLoansLoanIdChargesChargeIdRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-loans-loan-id-charges-charge-id-response/index.html">PutLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Update a Loan Charge Currently Loan Charges may be updated only if the Loan is not yet approved Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2057447178%2FFunctions%2F-843168002" anchor-label="updateLoanCharge1" id="-2057447178%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-loan-charge1.html"><span>update</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge1</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2057447178%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="update-loan-charge1.html"><span class="token function">updateLoanCharge1</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">putLoansLoanIdChargesChargeIdRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-loans-loan-id-charges-charge-id-request/index.html">PutLoansLoanIdChargesChargeIdRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-loans-loan-id-charges-charge-id-response/index.html">PutLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Update a Loan Charge Currently Loan Charges may be updated only if the Loan is not yet approved Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-732393481%2FFunctions%2F-843168002" anchor-label="updateLoanCharge2" id="-732393481%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-loan-charge2.html"><span>update</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-732393481%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="update-loan-charge2.html"><span class="token function">updateLoanCharge2</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">putLoansLoanIdChargesChargeIdRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-loans-loan-id-charges-charge-id-request/index.html">PutLoansLoanIdChargesChargeIdRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-loans-loan-id-charges-charge-id-response/index.html">PutLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Update a Loan Charge Currently Loan Charges may be updated only if the Loan is not yet approved Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1818413885%2FFunctions%2F-843168002" anchor-label="updateLoanCharge3" id="-1818413885%2FFunctions%2F-843168002" data-filterable-set=":fineract-client:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":fineract-client:dokkaHtml/commonMain" data-filterable-set=":fineract-client:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-loan-charge3.html"><span>update</span><wbr></wbr><span>Loan</span><wbr></wbr><span><span>Charge3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1818413885%2FFunctions%2F-843168002"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fineract-client:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="update-loan-charge3.html"><span class="token function">updateLoanCharge3</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loanExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">loanChargeExternalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">putLoansLoanIdChargesChargeIdRequest<span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-loans-loan-id-charges-charge-id-request/index.html">PutLoansLoanIdChargesChargeIdRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.mifos.fineract.client.models/-put-loans-loan-id-charges-charge-id-response/index.html">PutLoansLoanIdChargesChargeIdResponse</a></div><div class="brief "><p class="paragraph">Update a Loan Charge Currently Loan Charges may be updated only if the Loan is not yet approved Responses:</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
